@@ -49,7 +49,7 @@
         <h5>Introduction</h5>
         <p>
         The Bloch sphere is a powerful geometric representation frequently employed in quantum mechanics to visualize and analyze quantum states of a two-level quantum system, often referred to as a qubit. 
-        The Bloch sphere is named after the Swiss phycisist Felix Bloch, the father of Nuclear Magnetic Resonance (NMR), who introduced it as an intuitive way to depict the quantum state of the $SU(2)$ Hilbert space. Typically, the qubit state is described for a pure system by a 2-dimensional, complex valued vector of length 1.
+        The Bloch sphere is named after the Swiss physicist Felix Bloch, the father of Nuclear Magnetic Resonance (NMR), who introduced it as an intuitive way to depict the quantum state of the $SU(2)$ Hilbert space. Typically, the qubit state is described for a pure system by a 2-dimensional, complex valued vector of length 1.
         </p>
         <p>
         The Bloch sphere provides a 3D representation of this quantum state space, where the north and south poles represent the basis states $|0\rangle$ and $|1\rangle$, while the equator embodies the superposition of these states. Unitary transformations, which encompass quantum gates and operations, are elegantly visualized on the Bloch sphere as rotations. A rotation about any axis corresponds to a specific unitary transformation applied to the quantum state. This is because of the isomorphic relationship between the $SU(2)$ group and the group of rotations in 3D space, $SO(3)$. This makes the Bloch sphere a valuable tool for designing and comprehending quantum algorithms and quantum gates.
@@ -80,7 +80,7 @@
 
         Rotations around the axis $i$ are performed by applying the corresponding unitary operator to the current state $|\psi\rangle$,
         $$ |\psi'\rangle = R_i(\phi) |\psi\rangle. $$
-        The visualizer tool stores the state state $|\psi\rangle$, performes the quantum actions on it and uses the above mapping to compute the Bloch vector representation after every manipulation. The Bloch vector is then used to plot the state on the Bloch sphere. 
+        The visualizer tool stores the state $|\psi\rangle$, performs the quantum actions on it and uses the above mapping to compute the Bloch vector representation after every manipulation. The Bloch vector is then used to plot the state on the Bloch sphere. 
         
         For the three Cartesian axes $i \in {x,y,z}$, the rotation operators are given by
         $$
@@ -105,15 +105,15 @@
 
         <h5>How to use this tool</h5>
         <p>
-        The tab <i>Rotation around default axis</i>, allows to perform rotation operations around the three Cartesian axes. The rotation angle can be chosen by the user. The rotation is performed by applying the corresponding unitary operator to the current state $|\psi\rangle$, Most common rotation angles have separate buttons.
+        The tab <i>Rotations around default axes</i>, allows to perform rotation operations around the three Cartesian axes. The rotation angle can be chosen by the user. The rotation is performed by applying the corresponding unitary operator to the current state $|\psi\rangle$, Most common rotation angles have separate buttons.
       </p>
 <p>
         The tab <i>Rotation around custom axis</i>, allows to perform a rotation operation around an axis that can be specified by the user entering a polar angle $\theta$ and an azimuthal angle $\varphi$. The rotation angle can be chosen by the user. The rotation is performed by applying the corresponding unitary operator to the current state $|\psi\rangle$. All units are in degrees.
       </p>
       <p>
-        The tab <i>Gates</i>, allows to apply the most common quantum gates to the current state. They are defined as follows:
+        The tab <i>Quantum gates</i>, allows to apply the most common quantum gates to the current state. They are defined as follows:
         <ul style="margin-left:2em;list-style: circle;">
-        <li style="list-style: disc;">Pauli gates: $X = R_x(\pi)$ (NOT / bit flip), $Y = R_y(\pi)$, $Z = R_z(\pi)$ (phase filip)</li>
+        <li style="list-style: disc;">Pauli gates: $X = R_x(\pi)$ (NOT / bit flip), $Y = R_y(\pi)$, $Z = R_z(\pi)$ (phase flip)</li>
         <li style="list-style: disc;">Hadamard gate: $H = R_x(\pi) R_y(\pi/2)$</li>
         <li style="list-style: disc;">S gate: $S = R_z(\pi/2)$</li>
         <li style="list-style: disc;">$\pi/8$ gate: $T = R_z(\pi/4)$</li>
@@ -121,7 +121,7 @@
       </p>
 
       <p>
-        The tab <i>Pulses</i> computes the action of am rf pulse in the rotating frame. All units are dimensionless. A pulse with the amplitude 1 and a duration of 1 corrersponds to a $2\pi$ rotation. To apply pulses along different axes in the conventional sense, use the phase in degrees. The pulse is applied by multiplying the current state with the corresponding unitary operator. The buttons "apply pulse along x" and "apply pulse along y" apply a pulse with the given amplitude and duration along the $x$- and $y$-axis, respectively. Typically, in the phyical implementation, the pulse is only applied along one axis and phase differences between pulses are realized in the rotating frame.
+        The tab <i>Pulses</i> computes the action of am rf pulse in the rotating frame. All units are dimensionless. A pulse with the amplitude 1 and a duration of 1 corresponds to a $2\pi$ rotation. To apply pulses along different axes in the conventional sense, use the phase in degrees. The pulse is applied by multiplying the current state with the corresponding unitary operator. The buttons “apply pulse along x” and “apply pulse along y” apply a pulse with the given amplitude and duration along the $x$- and $y$-axis, respectively. Typically, in the physical implementation, the pulse is only applied along one axis and phase differences between pulses are realized in the rotating frame.
       </p>
         </div>
         </div>
